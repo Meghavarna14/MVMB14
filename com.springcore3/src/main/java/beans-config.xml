@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> 
+        
+    <!-- bean definitions here -->
+	
+	<bean class="com.apache.maven.archetypes.com.dto.Address" name="address">
+		<property name="aId">
+			<value>1</value>
+		</property>
+		<property name="aCity">
+			<value>Bengaluru</value>
+		</property>
+		<property name="aState" value="Karnataka">
+		</property>
+	</bean>
+
+
+	<bean class="com.apache.maven.archetypes.com.dto.Student"
+		name="student01" autowire="constructor">
+		<property name="sId">
+			<value>1</value>
+		</property>
+		<property name="sName">
+			<value>Student01</value>
+		</property>
+		<property name="sAge" value="22">
+
+		</property>
+	</bean>
+	<!-- <bean class="com.apache.maven.archetypes.com.dto.Student"
+		name="student01" autowire="byName">
+		<property name="sId">
+			<value>1</value>
+		</property>
+		<property name="sName">
+			<value>Student01</value>
+		</property>
+		<property name="sAge" value="22">
+
+		</property>
+	</bean>
+	<bean class="com.apache.maven.archetypes.com.dto.Student"
+		name="student01" autowire="byType">
+		<property name="sId">
+			<value>1</value>
+		</property>
+		<property name="sName">
+			<value>Student01</value>
+		</property>
+		<property name="sAge" value="22">
+
+		</property>
+	</bean> -->
+</beans>

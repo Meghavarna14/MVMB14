@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+	<bean class="com.apache.maven.archetypes.com.dto.Student"
+		name="student01">
+		<!-- setter injection or property injection -->
+		<constructor-arg name="sId">
+			<value>1</value>
+		</constructor-arg>
+		<constructor-arg name="sName">
+			<value>Student01</value>
+		</constructor-arg>
+		<constructor-arg name="sAge" value="22">
+
+		</constructor-arg>
+	</bean>
+	<bean class="com.apache.maven.archetypes.com.dto.Student"
+		name="student02">
+		<!-- setter injection or property injection -->
+		<constructor-arg name="sId">
+			<value>2</value>
+		</constructor-arg>
+		<constructor-arg name="sName">
+			<value>Student02</value>
+		</constructor-arg>
+		<constructor-arg name="sAge" value="23"></constructor-arg>
+	</bean>
+</beans>

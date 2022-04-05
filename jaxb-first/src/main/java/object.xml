@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<collegestudent>
+    <address>
+        <aId>1</aId>
+        <aLine01>Bannerghatta</aLine01>
+        <aLine02>Bengaluru</aLine02>
+    </address>
+    <marks>
+        <entry>
+            <key>Java</key>
+            <value>70</value>
+        </entry>
+        <entry>
+            <key>Software Engineering</key>
+            <value>95</value>
+        </entry>
+        <entry>
+            <key>Operating System</key>
+            <value>89</value>
+        </entry>
+        <entry>
+            <key>DBMS</key>
+            <value>90</value>
+        </entry>
+    </marks>
+    <s_id>1</s_id>
+    <s_name>Ram</s_name>
+</collegestudent>

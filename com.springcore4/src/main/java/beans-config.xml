@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+
+	<bean class="com.apache.maven.archetypes.com.dto.Student"
+		name="student01">
+		<!-- setter injection or property injection -->
+		<property name="sId">
+			<value>1</value>
+		</property>
+		<property name="sName">
+			<value>Student01</value>
+		</property>
+		<property name="sAge" value="22">
+
+		</property>
+		<property name="friendList">
+			<list>
+				<value>Sam</value>
+				<value>Harry</value>
+				<value>Rosy</value>
+			</list>
+		</property>
+		<property name="numberSet">
+			<set>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+				<value>5</value>
+			</set>
+		</property>
+	</bean>
+
+</beans>
